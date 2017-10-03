@@ -50,7 +50,6 @@ python Zip.py -z <File Name> -max <Maxium length>
 ```
 
 **>>** This command will make the cracking progerss end at <Maxium length>-length password.  	
-	
 **>>** But if the password has the length greater than <Maxium length> value, the progess will throw error.  
 	
 ### -r RULE
