@@ -41,24 +41,29 @@ Optional arguments:
 python Zip.py -z <File Name> -min <Minium length> 
 ```
 
-**>>** This command will make the cracking progress start at <Minium length>-length password.  
-**>>** But if the password has the length smaller than <Minium length> value, the progess will run infinite.  
+<ul>
+<li> This command will make the cracking progress start at <Minium length>-length password.  
+<li> But if the password has the length smaller than <Minium length> value, the progess will run infinite.  
+</ul>	
 	
 ### -max MAX
 ```sh
 python Zip.py -z <File Name> -max <Maxium length> 
 ```
 
-**>>** This command will make the cracking progerss end at <Maxium length>-length password.  	
-**>>** But if the password has the length greater than <Maxium length> value, the progess will throw error.  
-	
+<ul>
+<li> This command will make the cracking progerss end at <Maxium length>-length password.  	
+<li> But if the password has the length greater than <Maxium length> value, the progess will throw error.  
+</ul>
+
 ### -r RULE
 ```sh
 python Zip.py -z <File Name> -r <Characters>
 ```
 
-**>>** This command will make the cracking progress generate password list base on RULE.
-
-**>>** But if the password has characters outside the given rule, the progress will run infinite.
+<ul>
+<li> This command will make the cracking progress generate password list base on RULE.
+<li> But if the password has characters outside the given rule, the progress will run infinite.
+</ul>
 
 **NOTE that we can combine all optional arguments in order to cracking password faster.**
