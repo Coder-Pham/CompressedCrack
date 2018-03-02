@@ -3,7 +3,12 @@ This tool is made to test my programming skill. You may found it quiet easy and 
 I'm still working on this project because it's not fully-equiped.   
 I tend to change it from Python2 to Python3, because Python3 has more library working on Compressed, so maybe I can crack .tar files too.     
 
-If you have any suggestion about this project, please tell me, maybe we can develop it together.   
+If you have any suggestion about this project, please tell me, maybe we can develop it together.  
+
+In the **code** folder, I included 2 Crack_Compressed.py. 
+The first version is 1-thread run only which will take more time to find the result for password but guaranteed find it. 
+The second version is queued 3-thread run which will take more CPU space, but faster to find result. **HOWEVER, I think I didn't do well with thread-optimize so it's usually crash or freeze your computer.** I will try to optimize it much better.  
+
 # Prerequisites
 To run this quickstart, you’ll need:
 
@@ -22,7 +27,7 @@ python CompressedCrack.py -f <Compressed File Name>
 
 For example, I have a `test.zip`or `test.rar` that need to cracked. I shall type:   
 	```
-	python CompressedCrack.py -z test.zip
+	python Crack_Compressed.py -z test.zip
 	```
 
 General help text:
@@ -38,7 +43,7 @@ Optional arguments:
 ## List optional arguments:
 ### -min MIN
 ```sh
-python CompressedCrack.py -f <File Name> -min <Minium length> 
+python Crack_Compressed.py -f <File Name> -min <Minium length> 
 ```
 
 <ul>
@@ -48,7 +53,7 @@ python CompressedCrack.py -f <File Name> -min <Minium length>
 	
 ### -max MAX
 ```sh
-python CompressedCrack.py -f <File Name> -max <Maxium length> 
+python Crack_Compressed.py -f <File Name> -max <Maxium length> 
 ```
 
 <ul>
@@ -58,7 +63,7 @@ python CompressedCrack.py -f <File Name> -max <Maxium length>
 
 ### -r RULE
 ```sh
-python CompressedCrack.py -f <File Name> -r <Characters>
+python Crack_Compressed.py -f <File Name> -r <Characters>
 ```
 
 <ul>
