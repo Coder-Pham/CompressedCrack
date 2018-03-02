@@ -142,7 +142,7 @@ class Handler:
 
 
 def main():
-    check = Check()     #lay cac parameter tu -i
+    check = Check()    
     rarfile.UNRAR_TOOL = 'UnRAR.exe'
     handler = Handler(check.min, check.max, check.rule, check.type, check.file)
 
