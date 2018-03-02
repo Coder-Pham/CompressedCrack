@@ -204,7 +204,7 @@ workQueue = Queue.Queue(-1)  # Unlimited storage for queue with -1
 threads = []
 
 
-check = Check()     #lay cac parameter tu -i
+check = Check()   
 rarfile.UNRAR_TOOL = 'UnRAR.exe'
 
 # Create new threads
