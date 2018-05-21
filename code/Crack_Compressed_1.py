@@ -16,7 +16,7 @@ parser.add_argument('-min', dest = 'min', type = int , default = 0, help = '<min
 parser.add_argument('-max', dest = 'max', type = int , default = 100, help = '<maxLength>')
 parser.add_argument('-r', dest = 'rule', default = None, help = 'Password\'s rule')
 
-options = parser.parse_args(['-f', 'test.rar'])
+options = parser.parse_args()
 
 
 class Check:
@@ -114,13 +114,13 @@ class Handler:
         print 'Cracking password has', length, 'characters'
         for Pass in listPass:
             tryPass = ''.join(Pass)
-            if self.type == '.rar':
+            if self.type == '.zip':
                 tryPass = tryPass.encode()
-            #print tryPass
+            print 'Trying password: ', tryPass
             if self.FIND == False:
-                t = Thread(target = self.extractFile, args = (tryPass, ))
-                t.setDaemon(True)
-                t.start()
+                self.extractFile(tryPass)
+            else:
+                parser.exit()
             
     def extractFile(self, password, ):
         try:

@@ -17,7 +17,7 @@ parser.add_argument('-min', dest='min', type=int, default=0, help='<minLength>')
 parser.add_argument('-max', dest='max', type=int, default=100, help='<maxLength>')
 parser.add_argument('-r', dest='rule', default=None, help='Password\'s rule')
 
-options = parser.parse_args(['-f', 'test.rar'])
+options = parser.parse_args()
 
 '''
 class myThread(threading.Thread):
