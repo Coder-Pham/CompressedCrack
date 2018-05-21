@@ -8,7 +8,7 @@ from threading import Thread
 import time
 import Queue
 
-CHARACTER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*,.'
+CHARACTER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890,.'
 
 parser = argparse.ArgumentParser(description = 'CompressedCrack v1.0', epilog = 'Use -h for help')
 parser.add_argument('-f', dest = 'file', help = 'The compressed file name', required = True)
