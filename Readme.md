@@ -7,7 +7,7 @@ If you have any suggestion about this project, please tell me, maybe we can deve
 
 In the **code** folder, I included 2 Crack_Compressed.py. 
 The first version is 1-thread run only which will take more time to find the result for password but guaranteed find it. 
-The second version is queued 3-thread run which will take more CPU space, but faster to find result. **HOWEVER, I think I didn't do well with thread-optimize so it's usually crash or freeze your computer.** I will try to optimize it much better.  
+The second version is queued 3-thread run which will take more CPU space, but faster to find result. **HOWEVER, I think I didn't do well with thread-optimize so it usually crash or freeze your computer.** I will try to optimize it much better.  
 
 # Prerequisites
 To run this quickstart, you’ll need:
