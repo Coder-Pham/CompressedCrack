@@ -32,14 +32,14 @@ class Check:
 
         #KIEM TRA LENGTH HOP LE
         if (self.min > self.max):
-            print "Length Error"
+            print ("Length Error")
             parser.exit()
 
         # KIEM TRA TYPE FILE
         if self.CheckFileExist(self.file):
             self.getType(self.file)
         else:
-            print "No such file or directory: ", self.file
+            print ("No such file or directory: ", self.file)
 
     def CheckFileExist(self, file):
         if os.path.isfile(file):
@@ -51,7 +51,7 @@ class Check:
         if (os.path.splitext(file)[1] == '.rar' or os.path.splitext(file)[1] == '.zip'):
             self.type = os.path.splitext(file)[1]
         else:
-            print 'Extension Error'
+            print ('Extension Error')
             parser.exit()
 
 
@@ -111,12 +111,12 @@ class Handler:
             
     def Brute(self, length):
         listPass = product(self.rule, repeat = length)
-        print 'Cracking password has', length, 'characters'
+        print ('Cracking password has', length, 'characters')
         for Pass in listPass:
             tryPass = ''.join(Pass)
             if self.type == '.zip':
                 tryPass = tryPass.encode()
-            print 'Trying password: ', tryPass
+            print ('Trying password: ', tryPass)
             if self.FIND == False:
                 self.extractFile(tryPass)
             else:
@@ -126,9 +126,9 @@ class Handler:
         try:
             self.FileCrack.extractall(pwd = password)
             print ('Complete')
-            print 'Password: ',password
-            print 'Time: ', time.clock() - self.start, 's' 
-            print 'Wait for finishing threads...'
+            print ('Password: ',password)
+            print ('Time: ', time.clock() - self.start, 's') 
+            print ('Wait for finishing threads...')
              #TIM DC PASSWORD
             self.FIND = True
         except:
@@ -136,7 +136,7 @@ class Handler:
 
     def End_Crack(self):
         if self.FIND == False:
-            print 'Password not in this rule'
+            print ('Password not in this rule')
             sys.exit(0)
             parser.exit()           
 
