@@ -13,7 +13,7 @@ The second version is queued 3-thread run which will take more CPU space, but fa
 To run this quickstart, you’ll need:
 
 <ul>
-<li> Python 2.7.14 or greater.    
+<li> Python 3.6.5 or greater.    
 <li> The pip package management tool.     
 <li> A good knowlegde about Powershell or Bash.  
 </ul>
